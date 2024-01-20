@@ -2,12 +2,14 @@ import express, { json, urlencoded } from "express";
 import db from "./helper/database/connection";
 import { Server } from "socket.io";
 import http from 'http'
+import cors from 'cors'
 
 import { v4 as uuidv4 } from 'uuid';
 
 const app = express();
 const port = 5000;
 
+app.use(cors())
 app.use(json())
 app.use(urlencoded({ extended: true }))
 
