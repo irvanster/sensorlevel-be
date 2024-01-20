@@ -7,7 +7,7 @@ import cors from 'cors'
 import { v4 as uuidv4 } from 'uuid';
 
 const app = express();
-const port = 5000;
+const port = 5001;
 
 app.use(cors())
 app.use(json())
